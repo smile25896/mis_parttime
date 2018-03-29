@@ -1,0 +1,419 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Microsoft JhengHei';
+}
+
+strong{
+  font-weight: bold;
+  font-size: 1.2em
+}
+
+.none{
+  display: none;
+}
+
+.returnTop{
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  width: 80px;
+  height: 80px;
+  background: #73c8dc;
+  border-radius: 40px;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.returnTop a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+.cover{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.cover img{
+  height: 530px;
+}
+
+.topDiv{
+  position: absolute;
+  top: 240px;
+  left: 100px;
+  display: flex;
+  color: white;
+  font-family: 'Noto Sans TC';
+}
+
+.topDiv img{
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.69));
+}
+
+.topDiv .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: bold;
+  margin-left: 20px;
+  /* align-items: center; */
+}
+
+.topDiv .text .uname{
+  font-size: 1.6rem;
+  padding-bottom: 0.5rem;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.49));
+}
+
+.topDiv .text .dname{
+  font-size: 3rem;
+  padding-bottom: 0.5rem;
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.69));
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem; 
+  border-bottom: 1px #6FC4CE dashed;
+}
+
+.header .title{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2f7e87;
+  padding: 20px 0px 20px 40px;
+}
+
+.header .menu{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px 15px;
+}
+
+.header .menu a{
+  margin: 0 10px;
+  color: #6FC4CE;
+  text-decoration: none;
+}
+
+.header .menu a:visited{
+  color: #6FC4CE;
+}
+
+.main{
+  display: flex;
+  margin-top: 2rem;
+  /* height: 600px; */
+  border-bottom: 1px #6FC4CE dashed;
+}
+
+.main .title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  color: #6FC4CE;
+}
+
+.info .title{
+  writing-mode: vertical-rl;
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+
+.main .content{
+  padding: 1rem 3rem 1rem 3rem;
+  /* line-height: 1.6rem; */
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+
+.info .content .circleBanner{
+  display: flex;
+  justify-content: space-around;
+}
+
+.info .content .circleBanner .circleDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .content .circleBanner .circleDiv .circle{
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  background: #6FC4CE;
+  color: white;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: default;
+  transition: transform 0.5s;
+}
+
+.info .content .circleBanner .circleDiv .circle:hover{
+  transform: scale(1.1)
+}
+
+.info .content .circleBanner .circleDiv:nth-child(even) .circle{
+  border: 6px #6FC4CE solid;
+  background: #fff;
+  color: #6FC4CE;
+}
+
+.info .content .circleBanner .circleDiv:nth-child(2) .circle{
+  line-height: 3rem;
+}
+
+.info .content .circleBanner .circleDiv:nth-child(3) .circle{
+  font-size: 3.2rem;
+}
+
+.info .content .circleBanner .circleDiv .circleText{
+  color: #6FC4CE;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+.info .bottom{
+  display: flex;
+  /* margin-top: 2rem; */
+}
+
+.info .bottom div{
+  flex: 1;
+  padding: 2rem;
+}
+
+.main2{
+  padding: 0rem 1.5rem;
+}
+
+.main2 .feature{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* background: #6fc4ce;
+  color: white; */
+}
+
+.main2 .feature .title{
+  /* color: white; */
+}
+
+.main2 .alumnii{
+  display: flex;
+  flex-direction: column;
+  flex: 1
+}
+
+.main2 .title{
+  padding: 1rem 2rem
+}
+
+.main2 .feature .content{
+  padding: 1rem 3rem;
+}
+
+.main .alumnii .content{
+  display: flex;
+  flex-direction: column;
+  /* padding: 1rem 4rem 1rem 3rem; */
+}
+
+.main .alumnii .content .person{
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.main .alumnii .content .person img{
+  width: 100px;
+  border-radius: 10px;
+}
+
+.main .alumnii .content .person .right{
+  padding-left: 1rem;
+}
+
+.main .alumnii .content .person .right .name{
+  color: #2f7e87;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.main .alumnii .content .person .right .position{
+  font-weight: bold;
+}
+
+.teacher{
+  display: block;
+  /* background: #def2f4; */
+  padding: 2rem 0 0 0;
+}
+
+.teacher .content{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+/* @media (min-width: 500px){
+  .teacher .content .person{
+    width: 100%;
+  }
+} */
+
+@media (max-width: 750px){
+  .teacher .content .person{
+    width: 100%;
+  }
+}
+
+@media (min-width: 750px){
+  .teacher .content .person{
+    width: 50%;
+  }
+}
+
+
+.teacher .content .person{
+  display: flex;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.teacher .content .person div{
+  padding: 0 1rem;
+}
+
+.teacher .content .person .name{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  background: #6FC4CE;
+  border-radius: 100%;
+  min-width: 100px;
+  max-width: 100px;
+  height: 100px;
+}
+
+.teacher .content .person .name::after{
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  border: 1px #fff solid;
+}
+
+.teacher .content .person .right{
+  /* width: 400px; */
+  min-width: 200px;
+}
+
+.teacher .content .person .label{
+  font-size: 0.9em;
+  color: #666;
+}
+
+.teacher .content .person .position{
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.teacher .content .person .education{
+  margin-bottom: 0.5rem;
+}
+
+.teacher .content .person .research{
+  margin-bottom: 0.5rem;
+}
+
+.line{
+  width: 90%;
+  height: 1px;
+  margin: 0.5rem 0rem 0.5rem 1rem;
+  background: #6FC4CE;
+}
+/*
+.alumnii{
+  margin-top: 2rem;
+}
+
+.alumnii .title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  color: #F9AA43;
+  text-align: center;
+}
+
+.alumnii .content{
+  padding: 2rem 4rem;
+}
+
+.alumnii .content .person{
+  display: flex;
+  margin: 1rem 0;
+  height: 550px;
+}
+
+.alumnii .content .photo img{
+  height: 150px;
+}
+
+.alumnii .content .person .right{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.alumnii .content .person .right .name{
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: bold;
+  color: #F9AA43;
+}
+
+.alumnii .content .person .right .position{
+  line-height: 1.rem;
+}
+
+.alumnii .content .person .right .saying{
+  flex: 1;
+  margin-top: 0.4rem;
+}
+*/
