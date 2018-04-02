@@ -94,7 +94,7 @@ strong{
 }
 
 .header .title{
-  font-size: 1.8rem;
+  font-size: 2.6rem;
   font-weight: bold;
   color: #006b77;
   padding: 20px 0px 20px 40px;
@@ -112,6 +112,7 @@ strong{
   margin: 0 10px;
   color: #6FC4CE;
   text-decoration: none;
+  line-height: 2.6rem;
 }
 
 .header .menu a:visited{
