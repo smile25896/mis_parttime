@@ -77,13 +77,13 @@ strong{
 .topDiv .text .uname{
   font-size: 1.6rem;
   padding-bottom: 0.5rem;
-  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.49));
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.89));
 }
 
 .topDiv .text .dname{
   font-size: 3rem;
   padding-bottom: 0.5rem;
-  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.69));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.89));
 }
 
 .header{
@@ -96,7 +96,7 @@ strong{
 .header .title{
   font-size: 1.8rem;
   font-weight: bold;
-  color: #2f7e87;
+  color: #006b77;
   padding: 20px 0px 20px 40px;
 }
 
@@ -121,6 +121,7 @@ strong{
 .main{
   display: flex;
   margin-top: 2rem;
+  flex-direction: column;
   /* height: 600px; */
   border-bottom: 1px #6FC4CE dashed;
 }
@@ -130,16 +131,17 @@ strong{
   font-weight: bold;
   letter-spacing: 0.5rem;
   color: #6FC4CE;
+  padding: 1rem 2rem
 }
 
 .info .title{
-  writing-mode: vertical-rl;
+  /*writing-mode: vertical-rl;*/
   padding-top: 2rem;
-  padding-left: 3rem;
+  padding-left: 3.5rem;
 }
 
 .main .content{
-  padding: 1rem 3rem 1rem 3rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
   /* line-height: 1.6rem; */
   font-size: 1.1rem;
   line-height: 1.8rem;
@@ -207,11 +209,12 @@ strong{
 
 .info .bottom div{
   flex: 1;
-  padding: 2rem;
+  padding: 1rem 3rem;
 }
 
 .main2{
   padding: 0rem 1.5rem;
+  flex-direction: row;
 }
 
 .main2 .feature{
@@ -301,11 +304,16 @@ strong{
   }
 }
 
+.teacher .title{
+	padding: 1rem 3.5rem;
+}
+
 
 .teacher .content .person{
   display: flex;
-  padding: 1rem;
+  padding: 0.5rem;
   font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .teacher .content .person div{
